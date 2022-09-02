@@ -459,7 +459,7 @@ namespace Enki
 		};
 		
 		//! Current ground texture
-		const GroundTexture groundTexture;
+		GroundTexture groundTexture;
 		
 		typedef std::set<PhysicalObject *> Objects;
 		typedef Objects::iterator ObjectsIterator;
