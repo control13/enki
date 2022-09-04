@@ -493,7 +493,7 @@ namespace Enki
 		//! Return whether the ground has a texture
 		bool hasGroundTexture() const;
 		//! Return the color of the ground at a given point, or white.
-		Color getGroundColor(const Point& p) const;
+		virtual Color getGroundColor(const Point& p) const;
 		
 		//! Simulate a timestep of dt. dt should be below 1 (typically .02-.1); physicsOversampling is the amount of time the physics is run per step, as usual collisions require a more precise simulation than the sensor-motor loop frequency.
 		virtual void step(double dt, unsigned physicsOversampling = 1);
