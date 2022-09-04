@@ -10,6 +10,8 @@ enable_testing()
 find_package(Qt5 COMPONENTS Core Gui Widgets OpenGL)
 find_package(OpenGL REQUIRED)
 
+add_compile_options(-g)
+
 # check for SDL2
 find_package(SDL2)
 
